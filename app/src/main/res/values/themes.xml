@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema principal -->
+    <style name="Theme.DamonischWA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSurface">@color/background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Cores secundárias -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Background -->
+        <item name="android:windowBackground">@color/background</item>
+
+        <!-- Preferences com estilo de cards -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.CardStyle</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/Widget.DamonischWA.Toolbar</item>
+    </style>
+
+    <!-- Preferences com visual de cards -->
+    <style name="PreferenceThemeOverlay.CardStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- Cores do texto -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Estilos customizados -->
+        <item name="preferenceCategoryStyle">@style/PreferenceCategory.CardStyle</item>
+        <item name="switchPreferenceCompatStyle">@style/SwitchPreferenceCompat.CardStyle</item>
+        <item name="preferenceStyle">@style/CustomPreferenceStyle</item>
+    </style>
+
+    <!-- Categoria com estilo customizado -->
+    <style name="PreferenceCategory.CardStyle" parent="@style/Preference.Category">
+        <item name="android:textColor">@color/accent2</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- Switch com estilo customizado - MENOR -->
+    <style name="SwitchPreferenceCompat.CardStyle" parent="@style/Preference.SwitchPreferenceCompat">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">12dp</item> <!-- REDUZIDO de 20dp -->
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_height">48dp</item> <!-- ALTURA FIXA MENOR -->
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Textos no tamanho dos cards da main - MENOR -->
+    <style name="PreferenceStyle.MainSize" parent="@style/Preference">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">48dp</item> <!-- ALTURA FIXA MENOR -->
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Toolbar customizada -->
+    <style name="Widget.DamonischWA.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/background</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+    </style>
+    <style name="CustomPreferenceStyle" parent="@style/Preference">
+    <item name="android:layout_height">48dp</item> <!-- MESMA ALTURA DOS SWITCHES -->
+    <item name="android:minHeight">48dp</item>
+    </style>
+
+</resources>

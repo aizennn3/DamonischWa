@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="INFORMAÇÕES"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_version"
+        android:title="Versão"
+        android:summary="1.0"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_developer"
+        android:title="Desenvolvedor"
+        android:summary="Dämonisch Team"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceCategory
+        android:title="LINKS"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_github"
+        android:title="GitHub"
+        android:summary="Código fonte do projeto"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_telegram"
+        android:title="Telegram"
+        android:summary="Grupo de suporte"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceCategory
+        android:title="LEGAL"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_license"
+        android:title="Licença"
+        android:summary="Termos de uso"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_privacy_policy"
+        android:title="Política de Privacidade"
+        android:summary="Como usamos seus dados"
+        app:iconSpaceReserved="false" />
+
+</PreferenceScreen>

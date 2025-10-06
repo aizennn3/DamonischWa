@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="LIMPEZA AUTOMÁTICA"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_auto_clean_chats"
+        android:title="Limpar conversas automaticamente"
+        android:summary="Limpar conversas antigas automaticamente"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_clean_interval"
+        android:title="Intervalo de limpeza"
+        android:summary="Definir frequência da limpeza"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:title="LIMPEZA MANUAL"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_clean_cache"
+        android:title="Limpar Cache"
+        android:summary="Liberar espaço em disco"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_clean_media"
+        android:title="Limpar Mídia"
+        android:summary="Remover arquivos de mídia"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

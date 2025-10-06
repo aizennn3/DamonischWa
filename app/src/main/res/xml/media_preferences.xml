@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="DOWNLOAD DE MÍDIA"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_auto_download_images"
+        android:title="Download automático de imagens"
+        android:summary="Baixar imagens automaticamente"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_auto_download_audio"
+        android:title="Download automático de áudio"
+        android:summary="Baixar áudios automaticamente"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_auto_download_video"
+        android:title="Download automático de vídeos"
+        android:summary="Baixar vídeos automaticamente"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_storage_location"
+        android:title="Local de armazenamento"
+        android:summary="Definir onde salvar mídias"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

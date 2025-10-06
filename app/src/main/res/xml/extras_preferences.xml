@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="PERSONALIZAÇÃO"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_dark_theme"
+        android:title="Tema Escuro"
+        android:summary="Ativar tema escuro personalizado"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomPreference
+        android:key="pref_custom_themes"
+        android:title="Temas Customizados"
+        android:summary="Aplicar temas personalizados"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:title="EXPERIÊNCIA"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_hide_chat_bar"
+        android:title="Ocultar Barra de Chat"
+        android:summary="Esconder barra inferior do WhatsApp"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_custom_notifications"
+        android:title="Notificações Customizadas"
+        android:summary="Personalizar notificações"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

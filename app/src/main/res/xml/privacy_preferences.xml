@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="VISIBILIDADE"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_read_receipts"
+        android:title="Confirmação de Leitura"
+        android:summary="Desative para que outros não vejam que você leu as mensagens."
+        app:iconSpaceReserved="false"
+        android:defaultValue="true" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_last_seen"
+        android:title="Visto por último"
+        android:summary="Controle quem pode ver quando você esteve online pela última vez."
+        app:iconSpaceReserved="false"
+        android:defaultValue="true" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_profile_photo"
+        android:title="Foto do Perfil"
+        android:summary="Escolha quem pode ver sua foto de perfil."
+        app:iconSpaceReserved="false"
+        android:defaultValue="true" />
+
+    <PreferenceCategory
+        android:title="SEGURANÇA"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_security_notifications"
+        android:title="Notificações de Segurança"
+        android:summary="Receba notificações quando o código de segurança de um contato mudar."
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="FUNÇÕES ESPECIAIS"
+        app:iconSpaceReserved="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_always_online"
+        android:title="Sempre Online"
+        android:summary="Manter status sempre online"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_hide_typing"
+        android:title="Ocultar Digitando"
+        android:summary="Esconder indicador de digitação"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_anti_revoke"
+        android:title="Anti-Revogação"
+        android:summary="Ver mensagens apagadas"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+    <com.damonisch.wa.CustomSwitchPreference
+        android:key="pref_custom_fonts"
+        android:title="Fontes Personalizadas"
+        android:summary="Usar fontes customizadas"
+        app:iconSpaceReserved="false"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
