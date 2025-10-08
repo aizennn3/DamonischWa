@@ -56,6 +56,9 @@ dependencies {
     implementation(libs.androidx.preference.ktx)
     implementation(libs.androidx.fragment.ktx)
 
+    // Xposed - CORRIGIDO para Kotlin DSL
+    compileOnly("de.robv.android.xposed:api:82")
+
     // Navigation para animações
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("com.google.android.material:material:1.11.0")

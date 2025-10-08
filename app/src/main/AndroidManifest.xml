@@ -7,6 +7,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="Dämonisch WA"
         android:theme="@style/Theme.DamonischWA">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Módulo Damonisch WA para modificar o WhatsApp" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
 
         <activity
             android:name=".MainActivity"

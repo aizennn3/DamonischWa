@@ -7,14 +7,14 @@
         app:iconSpaceReserved="false" />
 
     <com.damonisch.wa.CustomSwitchPreference
-        android:key="pref_read_receipts"
+        android:key="hide_read"
         android:title="Confirmação de Leitura"
         android:summary="Desative para que outros não vejam que você leu as mensagens."
         app:iconSpaceReserved="false"
         android:defaultValue="true" />
 
     <com.damonisch.wa.CustomSwitchPreference
-        android:key="pref_last_seen"
+        android:key="freeze_last_seen"
         android:title="Visto por último"
         android:summary="Controle quem pode ver quando você esteve online pela última vez."
         app:iconSpaceReserved="false"
